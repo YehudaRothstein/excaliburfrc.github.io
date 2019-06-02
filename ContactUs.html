@@ -94,10 +94,11 @@
         }
 
         function copyPhone(){
+            var num = "+972541234567"
             if (mobile){
-                window.location = "0541234567";
+                window.location = "tel: " + num;
             } else {
-                copyTextToClipboard("0541234567");
+                copyTextToClipboard(num);
                 alert("Phone Number Copied To Clipboard!");
             }
         }

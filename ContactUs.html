@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <!-- Design -->
+    <link rel="shortcut icon" type="image/x-icon" href="./Logo.png" />
+    <script src="https://kit.fontawesome.com/c796c62e1c.js"></script>
+    <title>Team 6738 ｜ Excalibur</title>
+  </head>
+
+  <body id="b">
+    
+    <!-- Navbar -->
+    <div class="row justify-content-md-center m-0 mt-md-5 mt-sm-0">
+        <nav class="navbar navbar-expand-lg navbar-light col-md-8 col-sm-12">
+            <a class="navbar-brand" href="#">
+                <img src="./Logo.png" width="50" height="50" alt="" style="border-radius: 5px;">
+            </a>
+            <a class="navbar-brand" href="#">Excalibur 6738</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Seasons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Outreach</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactUs.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">About the Team</a>
+                    <a class="dropdown-item" href="#">About FRC</a>
+                    <a class="dropdown-item" href="#">About Israel</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row justify-content-md-center m-0 mb-md-5 mb-sm-0"> 
+        <div style="background-color:#012265; border-radius:0% !important;" class="jumbotron col-md-8 col-sm-12 m-0 ">
+            <table class="table text-center" style="border: 2px #012265 solid !important; color: #d3af37;">
+                <td><a id = "contactinfo" href="#" onclick="copyMail()"><i class="far fa-envelope"></i><h4> Email</h4></a></td>
+                <td><a id = "contactinfo"href="https://www.instagram.com/excalibur_6738/"><i class="fab fa-instagram"></i><h4> Instagram</h4></a></td>
+                <td><a id = "contactinfo" href="#" onclick = "copyPhone()"><i class="fas fa-phone"></i><h4> Phone</h4></a></td>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- A Script For Mobile Support -->
+    <script>
+        var mobile = false;
+        if ($(window).width() < 768) {
+            document.getElementById("b").style = "background-color:#012265 !important;";
+            mobile = true;
+        }
+        else {
+            document.getElementById("b").style = "background-color:#dcdcdc !important;";
+        }
+
+        function copyMail(){
+            if (mobile){
+                window.location = "mailto:excaliburfrc@gmail.com";
+            } else {
+                copyTextToClipboard("excaliburfrc@gmail.com");
+                alert("Adress Copied To Clipboard!");
+            }
+        }
+
+        function copyPhone(){
+            if (mobile){
+                window.location = "0541234567";
+            } else {
+                copyTextToClipboard("0541234567");
+                alert("Phone Number Copied To Clipboard!");
+            }
+        }
+
+        function copyTextToClipboard(text) {
+            var textArea = document.createElement("textarea");
+
+            textArea.style.position = 'fixed';
+            textArea.style.top = 0;
+            textArea.style.left = 0;
+            textArea.style.width = '2em';
+            textArea.style.height = '2em';
+            textArea.style.padding = 0;
+            textArea.style.border = 'none';
+            textArea.style.outline = 'none';
+            textArea.style.boxShadow = 'none';
+            textArea.style.background = 'transparent';
+            textArea.value = text;
+
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Copying text command was ' + msg);
+            } catch (err) {
+                console.log('Oops, unable to copy');
+            }
+
+            document.body.removeChild(textArea);
+        }
+    </script>
+  </body>
+</html>

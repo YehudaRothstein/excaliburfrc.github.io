@@ -139,3 +139,8 @@ td i{
   object-fit:cover !important;
   width: 100% !important;
 }
+
+#contactinfo{
+  text-decorations:none !important; 
+  color: #d3af37 !important;
+}

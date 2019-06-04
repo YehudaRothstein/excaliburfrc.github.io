@@ -140,7 +140,29 @@ td i{
   width: 100% !important;
 }
 
+/* Contact */
+
 #contactinfo{
   text-decorations:none !important; 
+  color: #d3af37 !important;
+}
+
+/* Seasons */
+
+h5 .btn-link{
+  background-color: #012265 !important;
+  color: #d3af37 !important;
+}
+
+.card-header{
+  background-color: #012265 !important;
+}
+
+.card{
+  border-color: #d3af37 !important;
+}
+
+.collapse, .collapsing{
+  background-color: #012265 !important;
   color: #d3af37 !important;
 }

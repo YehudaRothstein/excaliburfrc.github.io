@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-
     <!-- Design -->
     <link rel="shortcut icon" type="image/x-icon" href="./Logo.png" />
-    <script src="https://kit.fontawesome.com/c796c62e1c.js"></script>
     <title>Team 6738 ｜ Excalibur</title>
   </head>
 
@@ -58,15 +56,22 @@
                     </ul>
                 </div>
             </nav>
-        </div>
+        </div> 
 
-    <div class="row justify-content-md-center m-0 mb-md-5 mb-sm-0"> 
-        <div style="background-color:#012265; border-radius:0% !important;" class="jumbotron col-md-8 col-sm-12 m-0 ">
-            <table class="table text-center" style="border: 2px #012265 solid !important; color: #d3af37;">
-                <td><a id = "contactinfo" href="#" onclick="copyMail()"><i class="far fa-envelope"></i><h4> Email</h4></a></td>
-                <td><a id = "contactinfo"href="https://www.instagram.com/excalibur_6738/"><i class="fab fa-instagram"></i><h4> Instagram</h4></a></td>
-                <td><a id = "contactinfo" href="#" onclick = "copyPhone()"><i class="fas fa-phone"></i><h4> Phone</h4></a></td>
-            </table>
+    <div class="row justify-content-md-center m-0"> 
+        <div style="background-color:#012265; border-radius:0% !important;" class="jumbotron col-md-8 col-sm-12 m-0 pb-md-0">
+            <p class="p5" style="color:#d3af37 !important;">
+            One of the most important parts of FIRST is community outreach, which stays with you all year round, and not only during the season. When FIRST was established, its whole purpose was to bring children closer to science and technology, but the problem is that only the people whom are a part of a FIRST team are affected and involved with FIRSTs great ideas, and thus brought closer into science and technology.<br/>
+            One of the phrases that floats around in many FIRST teams is "more than a robot" - meaning that FIRST is not just about the season itself, but also about spreading FIRSTs values to the people around you. We believe that this is our job. We pass these values on to children in elementary schools through activities about science and technology and try to get as many people interested about STEM as possible.<br/>
+            Furthermore, we as a team mentor 3 FLL (one of the FIRSTs programs for kids 10-15) teams, teach them, help them understand robotics better, and generally teach them about FIRST and their values.<br/>
+            Additionally, each year we give a course for young mentors in the FLL program where we teach about responsibility and knowledge. Finally, a selected part of the group goes on to mentor FLL groups.<br/>
+            </p>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center m-0"> 
+        <div style="background-color:#012265; border-radius:0% !important;" class="jumbotron col-md-8 col-sm-12 m-0">
+            <img class="img-responsive rounded" src="https://drive.google.com/uc?id=117VNIyeWKX3Kte9ftclcJy-ZemLxr1UL" alt="..." style="width:100%;">
         </div>
     </div>
 
@@ -75,62 +80,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- A Script For Mobile Support -->
     <script>
-        var mobile = false;
         if ($(window).width() < 768) {
             document.getElementById("b").style = "background-color:#012265 !important;";
-            mobile = true;
         }
         else {
-            document.getElementById("b").style = "background-color:#dcdcdc !important;";
-        }
-
-        function copyMail(){
-            if (mobile){
-                window.location = "mailto:excaliburfrc@gmail.com";
-            } else {
-                copyTextToClipboard("excaliburfrc@gmail.com");
-                alert("Adress Copied To Clipboard!");
-            }
-        }
-
-        function copyPhone(){
-            var num = "+972541234567"
-            if (mobile){
-                window.location = "tel: " + num;
-            } else {
-                copyTextToClipboard(num);
-                alert("Phone Number Copied To Clipboard!");
-            }
-        }
-
-        function copyTextToClipboard(text) {
-            var textArea = document.createElement("textarea");
-
-            textArea.style.position = 'fixed';
-            textArea.style.top = 0;
-            textArea.style.left = 0;
-            textArea.style.width = '2em';
-            textArea.style.height = '2em';
-            textArea.style.padding = 0;
-            textArea.style.border = 'none';
-            textArea.style.outline = 'none';
-            textArea.style.boxShadow = 'none';
-            textArea.style.background = 'transparent';
-            textArea.value = text;
-
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-
-            try {
-                var successful = document.execCommand('copy');
-                var msg = successful ? 'successful' : 'unsuccessful';
-                console.log('Copying text command was ' + msg);
-            } catch (err) {
-                console.log('Oops, unable to copy');
-            }
-
-            document.body.removeChild(textArea);
+            document.getElementById("b").style = "background-color:#dcdcdc !important; border-top:#cc0000 10% solid";
         }
     </script>
   </body>

@@ -88,12 +88,14 @@
     <!-- A Script For Mobile Support -->
     <script>
         var mobile = false;
+        var mobilecolor = "#012265"
+        var desktopcolor = "#012265"
         if ($(window).width() < 768) {
-            document.getElementById("b").style = "background-color:#012265 !important;";
+            document.getElementById("b").style = "background-color:" + mobilecolor + " !important;";
             mobile = true;
         }
         else {
-            document.getElementById("b").style = "background-color:#dcdcdc !important;";
+            document.getElementById("b").style = "background-color:" + desktopcolor + " !important;";
         }
 
         function copyMail(){

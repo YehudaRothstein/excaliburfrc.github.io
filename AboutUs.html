@@ -86,11 +86,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- A Script For Mobile Support -->
     <script>
+        var mobilecolor = "#012265"
+        var desktopcolor = "#012265"
         if ($(window).width() < 768) {
-            document.getElementById("b").style = "background-color:#012265 !important;";
+            document.getElementById("b").style = "background-color:" + mobilecolor + " !important;";
         }
         else {
-            document.getElementById("b").style = "background-color:#dcdcdc !important;";
+            document.getElementById("b").style = "background-color:" + desktopcolor + " !important;";
         }
     </script>
   </body>

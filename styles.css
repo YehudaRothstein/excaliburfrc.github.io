@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #012265;
+  background-color: #001e59;
 }
 .navbar .navbar-brand {
   color: #d3af37;
@@ -125,9 +125,9 @@
   background-color: #00459c;
 }
 
-.body{
-  overflow: hidden;
-  overflow-x: hidden !important;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -143,19 +143,18 @@ td i{
 /* Contact */
 
 #contactinfo{
-  text-decorations:none !important; 
   color: #d3af37 !important;
 }
 
 /* Seasons */
 
 h5 .btn-link{
-  background-color: #012265 !important;
+  background-color: #001e59 !important;
   color: #d3af37 !important;
 }
 
 .card-header{
-  background-color: #012265 !important;
+  background-color: #001e59 !important;
 }
 
 .card{
@@ -163,10 +162,18 @@ h5 .btn-link{
 }
 
 .collapse, .collapsing{
-  background-color: #012265 !important;
+  background-color: #001e59 !important;
   color: #d3af37 !important;
 }
 
 a{
   color: #d3af37 !important;
+}
+
+.dayinfo{
+  font-size: 3.5vh !important;
+}
+
+.maincontact{
+  margin: 1vh !important;
 }

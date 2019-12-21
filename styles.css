@@ -34,15 +34,15 @@
 .navbar .navbar-nav .nav-item.show .nav-link:hover,
 .navbar .navbar-nav .nav-item.show .nav-link:focus {
   color: #d3af37;
-  background-color: #00459c;
+  /* background-color: #00459c; */
 }
-.navbar .navbar-toggle {
+/* .navbar .navbar-toggle {
   border-color: #00459c;
 }
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
   background-color: #00459c;
-}
+} */
 .navbar .navbar-toggle .navbar-toggler-icon {
   color: #d3af37;
 }
@@ -65,9 +65,9 @@
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
-  .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  .navbar-expand-sm .navbar-nav {
     color: #d3af37;
-    background-color: #00459c;
+    /* background-color: #00459c; */
   }
 }
 
@@ -79,9 +79,9 @@
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
-  .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  .navbar-expand-md .navbar-nav .show {
     color: #d3af37;
-    background-color: #00459c;
+    /* background-color: #00459c; */
   }
 }
 
@@ -93,11 +93,13 @@
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
-  .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  .navbar-expand-lg .navbar-nav {
     color: #d3af37;
-    background-color: #00459c;
+    /* background-color: #00459c; */
   }
 }
+
+/* .show .dropdown-menu .dropdown-item.active  */
 
 @media (max-width: 1199px) {
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
@@ -107,7 +109,7 @@
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
-  .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+  .navbar-expand-xl .navbar-nav {
     color: #d3af37;
     background-color: #00459c;
   }
@@ -120,7 +122,7 @@
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
   color: #d3af37;
 }
-.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+.navbar-expand .navbar-nav{
   color: #d3af37;
   background-color: #00459c;
 }
@@ -176,4 +178,36 @@ a{
 
 .maincontact{
   margin: 1vh !important;
+}
+
+.nav-item.show{
+  background: #001e59 !important;
+}
+
+.nav-item , .nav-link{
+  background: #001e59 !important;
+  border-radius: 2px;
+  transition: ease 0.2s;
+}
+
+.nav-item:hover , .nav-link:hover{
+  background: #012265 !important;
+  transition: ease 0.2s;
+}
+
+.dropdown-menu{
+  background: #012265;
+  border-radius: 2px;
+}
+
+.dropdown-item{
+  background: #012265;
+  color: #d3af37;
+  transition: ease 0.1s;
+}
+
+.dropdown-item:hover{
+  background: #d3af37;
+  color: #012265 !important;
+  transition: ease 0.1s;
 }

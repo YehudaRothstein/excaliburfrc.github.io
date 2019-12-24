@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="animstyles.css">
+    <script src="./loginAnimation.js"></script>
 
     <!-- Design -->
     <link rel="shortcut icon" type="image/x-icon" href="./Logo.png" />
@@ -65,7 +67,8 @@
           </ul>
           <ul class="navbar-nav">
               <li>
-                  <a class="nav-link" href="https://excalibur-private-server.herokuapp.com/"><i class="fas fa-user"></i> Login</a>
+                  <div class="load-anim-1"></div>
+                  <a id="loginlink" class="nav-link" style="display: inline-block;" href="javascript:goToLogin()"><i class="fas fa-user" id="loginicon"></i> Login</a>
               </li>
           </ul>
       </div>

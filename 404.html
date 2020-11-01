@@ -1,0 +1,39 @@
+---
+permalink: /404.html
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body id="b" > 
+   <div class="row justify-content-md-center m-0 mb-sm-0 pt-md-0" style="background-color:#012265; border-radius:0% !important; color:#d3af37 !important;">
+        <h1>404 Page Not Found</h1>
+    </div>     
+    <div class="row justify-content-md-center m-0 mb-sm-0 pt-md-0" style="background-color:#012265; border-radius:0% !important; color:#d3af37 !important;">
+        <h2><a href="./index.html">Back to home</a></h2>
+    </div>   
+        
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- A Script For Mobile Support -->
+    <script>
+        var mobilecolor = "#012265"
+        var desktopcolor = "#012265" //gray is #dcdcdc
+        var mobile = false;
+        if ($(window).width() < 768) {
+            mobile = true;
+            document.getElementById("b").style = "background-color:" + mobilecolor + " !important;";
+        }
+        else {
+            document.getElementById("b").style = "background-color:" + desktopcolor + " !important;";
+        }
+    </script>
+    </div>
+  </body>
+</html>
+
+<!-- Written by Dvir Akerman -->

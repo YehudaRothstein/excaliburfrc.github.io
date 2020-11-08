@@ -1,5 +1,17 @@
+* {
+  border-radius: 0%;
+}
+
+footer {
+  color: #d3af37 !important;
+}
+
 body {
   background-color: #012265;
+}
+
+p {
+  text-indent: 0% !important;
 }
 
 .navbar {

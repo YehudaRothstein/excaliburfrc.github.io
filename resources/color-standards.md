@@ -1,7 +1,9 @@
 ---
 permalink: /resources/color-standards.html
+layout: text
+imgsrc: ""
 ---
-## Our Team Colors
+### Our Team Colors
 - <b>Main</b>:
     - `hex: #012265`
     - `rgb: (1, 34, 101)`

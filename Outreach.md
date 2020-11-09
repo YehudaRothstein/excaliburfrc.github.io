@@ -7,7 +7,7 @@ imgsrc: "https://drive.google.com/uc?id=117VNIyeWKX3Kte9ftclcJy-ZemLxr1UL"
 One of the most important parts of FIRST is community outreach, that is relevant all year round (not
 only during the build/competition season). One of FIRST's goals is to "raise the next generation of engineers" -
 to bring children closer to science and technology. However, without community outreach, 
-only those who actively participate in FIRST team are affected.
+only those who actively participate in FIRST teams are affected.
 <br/> <br/>
 One of FIRST's mottos that many teams implement is "more than robots" - meaning that FIRST is not
 just about the season itself, but also about spreading FIRSTs values to the people around. We believe

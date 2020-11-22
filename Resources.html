@@ -5,12 +5,12 @@ layout: default
 
     <script>
         function getVideoUrl(index) {
-            videos = [
+            const videos = [
                 "https://www.youtube.com/embed/eSvPmKbIGUw?controls=0",
                 "https://www.youtube.com/embed/049cwhnNpvI?controls=0",
                 "https://www.youtube.com/embed/CLljYpERAao?controls=0",
                 "https://www.youtube.com/embed/1TTuW-5MPws?controls=0"
-            ]
+            ];
             if (index > videos.length - 1) {
                 alert("Wrong Video Index!");
                 return;
@@ -66,6 +66,7 @@ layout: default
                                 <li><a href="Logo.png">High Quality Team Logo</a></li>
                                 <li><a href="code-standards.html">Team Coding Standards</a></li>
                                 <li><a href="color-standards.html">Team Color Standards</a></li>
+                                <li><a href="/tutorials/">Tutorials</a></li>
                             </ul>
                         </div>
                     </div>

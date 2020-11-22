@@ -1,5 +1,6 @@
-name: 6738 Excalibur
+title: 6738 Excalibur
 description: Website for FRC team 6738 Excalibur
 markdown: GFM
+syntax_highlighter: rouge
 
-exclude: clean.sh .vscode/
+exclude: [ clean.sh , .vscode/ ]

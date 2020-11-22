@@ -11,8 +11,9 @@ This graph shows the process, you can click on each stage to go to the document 
 
 List version of the process:
 1. [**Create Branch**](create-branch.html)
-2. **Edit Files Branch** (no document, these are the changes you make to the code)
+2. **Edit Files** (no document, these are the changes you make to the code)
 3. [**Add and Commit Changes**](commit.html)
 4. [**Push Changes**](push.html)
 5. [**Submit Pull Request**](create-pr.html)
 6. [**Reviews**](reviews.html)
+7. [**Rebase**](rebase.html) (not always relevant) 

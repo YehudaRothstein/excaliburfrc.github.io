@@ -1,11 +1,11 @@
 ---
 permalink: /tutorials/git/
-layout: text
+layout: tutorial
 ---
 # Git Tutorial
 A general explanation about git can be found [here](intro.html)
 This tutorial explains the different stages of working with git in our team.
-This graph shows the process, you can click on each stage to go to the document about it. You can also see a list version below.
+This graph shows the process, links to articles below.
 
 ![](img/git-process.drawio.svg)
 

@@ -27,6 +27,7 @@ git pull origin
 <details id="ghd-pull">
 
 ![](img/ghd-pull.png)
+
 Click `Fetch Origin`.
 
 </details>

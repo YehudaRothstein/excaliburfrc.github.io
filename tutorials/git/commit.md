@@ -6,6 +6,7 @@ layout: tutorial
 Commits can be thought of as points in the history of the repository, or groups of changes.
 Each commit should be given a meaningful name that sums up the changes in that commit.
 Please avoid situations like this:
+
 ![xkcd](https://imgs.xkcd.com/comics/git_commit.png)
 
 Before creating the commit itself, you can choose what changes will be _`add`ed_ to the commit.

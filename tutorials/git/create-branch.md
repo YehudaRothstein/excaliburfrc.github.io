@@ -2,13 +2,14 @@
 permalink: /tutorials/git/create-branch.html
 layout: tutorial
 ---
-### Creating Branches
 Creating a new branch allows you to add commits on a parallel version of the repository.
 This can be used to test new features and not affect the `main` branch.
 Later, the changes made in the branch can be added to the `main` branch once they are tested.
 
-##### Pulling `origin`
+### Specifying the branch base
 Before creating a new branch, you want to make sure that you are _basing_ the branch on the right commit - the last commit on the `main` branch. The _base_ commit of a branch is the last commit that is shared with the other branches. A branch can be moved to a different _base_ using _`rebase`_, but rebasing should be avoided unless needed. 
+
+##### Pulling `origin`
 To make sure that we are on the latest `main`, we _`pull`_ the latest changes from GitHub (`origin`):
 
 <div class="tab">
@@ -41,8 +42,9 @@ If prompted, select `Rebase`.
 
 </details>
 
+##### Switching to `main`
+We can make sure we're on `main` (in older repositories the main branch might be named `master`):
 
-Then we can make sure we're on `main` (in older repositories the main branch might be named `master`):
 <div class="tab">
   <button class="tablinks" onclick="switchTo(event, 'cmd-switch')">Terminal</button>
   <button class="tablinks" onclick="switchTo(event, 'ij-switch')">IntelliJ</button>
@@ -76,9 +78,9 @@ the branch name) and then select `main > Checkout`.
 
 </details>
 
----
-##### Creating a new branch
+### Creating a new branch
 Now that we have the right base, create a new branch:
+
 <div class="tab">
   <button class="tablinks" onclick="switchTo(event, 'cmd-create')">Terminal</button>
   <button class="tablinks" onclick="switchTo(event, 'ij-create')">IntelliJ</button>

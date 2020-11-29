@@ -2,7 +2,6 @@
 permalink: /tutorials/git/commit.html
 layout: tutorial
 ---
-### Committing Changes
 Commits can be thought of as points in the history of the repository, or groups of changes.
 Each commit should be given a meaningful name that sums up the changes in that commit.
 Please avoid situations like this:

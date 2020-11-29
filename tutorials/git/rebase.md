@@ -2,25 +2,23 @@
 permalink: /tutorials/git/rebase.html
 layout: tutorial
 ---
-### Rebasing
 The `rebase` operation moves the base commit of the branch.
 It takes all each commit and applies its changes on the new base commit instead of on the old one.
 Usually, rebasing will be done onto a branch and not an actual commit - the new base commit will be the currently-latest commit on that branch.
 
 <img src="img/rebase-diagram.png" width=700/>
 
-#### When are `rebase`s needed?
+### When are `rebase`s needed?
 The main cause for needing to `rebase` is if the base branch (usually `origin/main`) of a Pull Request (PR) has commits added to it before the PR is merged.
 When this happens, the PR branch (for example, `mybranch`) should be rebased on the commits that have been added to the base branch.
 This is why you fetch the latest `origin/main` and then rebase onto it.
 
-
-#### Pull
+##### Pull
 Before rebasing, make sure that `origin/main` is up-to-date and that you are on the branch you want to rebase (here: `mybranch`).
 That is covered [here](./create-branch.html#pulling-codeorigincode).
 Then we will rebase `mybranch` onto `origin/main`.
 
-#### Rebase
+##### Rebase
 <div class="tab">
   <button class="tablinks" onclick="switchTo(event, 'cmd-rebase')">Terminal</button>
   <button style="" class="tablinks" onclick="switchTo(event, 'ij-rebase')">IntelliJ</button>
@@ -53,7 +51,7 @@ Open the Branches panel, click on `origin/main`, and then on `Rebase Current ont
 
 ---
 
-#### Force-Push
+##### Force-Push
 After rebasing, we will need to _force-push_ - the commit history of our branch changed, so GitHub will reject a normal `push`.
 
 ## **!!! Be careful with force-pushing !!!**

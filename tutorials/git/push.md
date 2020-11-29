@@ -2,8 +2,7 @@
 permalink: /tutorials/git/push.html
 layout: tutorial
 ---
-### Pushing Commits
-Once you have commits, you can `push` to the remote (`origin` - GitHub):
+Once you have commits, you can `push` them to the remote (`origin` - GitHub):
 
 <div class="tab">
   <button class="tablinks" onclick="switchTo(event, 'cmd-push')">Terminal</button>

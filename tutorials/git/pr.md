@@ -2,15 +2,14 @@
 permalink: /tutorials/git/create-pr.html
 layout: tutorial
 ---
-### Opening a Pull Request
 After [pushing](./push.html) your changes to GitHub, you can ask the repo admin to accept your changes. 
 This is done with a _Pull Request_ (often called a PR).
 A Pull Request has a _base branch_ (the branch that you want to add changes to, the one you created 
 a branch from [here](./create-branch.md)), and a _compare branch_ (the branch with your changes, the one you created).
 
 
-When pushing a branch from the terminal or from GitHub Desktop you can open a PR right away:
 You can always open a Pull Request from [GitHub.com](https://github.com) by going to the `Pull Requests` tab on the repository page.
+When pushing a branch from the terminal or from GitHub Desktop you can also open a PR right away:
 <div class="tab">
   <button class="tablinks" onclick="switchTo(event, 'cmd-pr')">Terminal</button>
   <button class="tablinks" onclick="switchTo(event, 'ghd-pr')">GitHub Desktop</button>
@@ -40,8 +39,7 @@ Clicking on `Create Pull Request` will open [GitHub](https://github.com) with op
 
 </details>
 
----
-##### Comparing Changes
+### Comparing Changes
 Once you get to the `Compare Changes` page, make sure that `base` is set to `main` (or `master` in older repositories) and `compare` is set to your branch.
 
 ![](img/create-pr.png)

@@ -14,8 +14,9 @@ layout: default
     <a id="tutorial-home" href="./">Tutorial Home</a>
     <a id="next" href="#">Next -></a>
     <script>loadProgressButtons("{{ page.permalink }}")</script>
-    <!--    </div>-->
     <div class="jumbotron col-sm-12 col-md-10 m-0 pb-md-0" style="background-color:#012265;">
+        <h1 id="title"></h1>
+        <script>setTitle("{{ page.permalink }}")</script>
         {{ content }}
     </div>
 </div>

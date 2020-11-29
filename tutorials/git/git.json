@@ -8,7 +8,7 @@ permalink: /tutorials/git/load-tutorial.js
     {
       "index": 0,
       "file": "/tutorials/git/create-branch.html",
-      "name": "Create Branch"
+      "name": "Create a Branch"
     },
     {
       "index": 1,
@@ -23,7 +23,7 @@ permalink: /tutorials/git/load-tutorial.js
     {
       "index": 3,
       "file": "/tutorials/git/create-pr.html",
-      "name": "Submit Pull Request"
+      "name": "Submit a Pull Request"
     },
     {
       "index": 4,

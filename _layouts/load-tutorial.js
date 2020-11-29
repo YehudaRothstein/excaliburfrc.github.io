@@ -1,24 +1,6 @@
 const json = JSON.parse(`
 {{ content }}
 `)
-// function loadTutorial(filepermalink) {
-//     // const regex = /\/tutorials\/(\w+)\/(\w+-\w+)\.html/
-//     // let match = regex.exec(filepermalink);
-//     // const tutorialName = match[1];
-//     // const currentFile = match[2];
-//
-//     let navbar = document.getElementById("sidenav");
-//     for(let i = 0; i < json["articles"].length; i++) {
-//         let element = json["articles"][i];
-//         let newElement = document.createElement("a");
-//         newElement.href = element["file"];
-//         newElement.text = element["name"];
-//         if(filepermalink === element["file"]) {
-//             newElement.className += " active";
-//         }
-//         navbar.appendChild(newElement);
-//     }
-// }
 
 function loadProgressButtons(currentPermalink) {
     let i;
@@ -67,4 +49,12 @@ function loadSidebar(currentPermalink) {
         }
         parent.appendChild(element);
     });
+}
+
+function setTitle(currentPermalink) {
+    let header = document.getElementById("title");
+
+    let currentfile = json["articles"].filter(article => article["file"] === currentPermalink)[0];
+    header.id = currentfile["name"].replace(" ", "-").replace("/", "").toLowerCase();
+    header.innerText = currentfile["name"];
 }

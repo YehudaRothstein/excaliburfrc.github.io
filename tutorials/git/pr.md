@@ -35,6 +35,7 @@ As explained by the message, the first link will open [GitHub](https://github.co
 <details id="ghd-pr">
 
 ![](img/ghd-pr.png)
+
 Clicking on `Create Pull Request` will open [GitHub](https://github.com) with options to create a Pull Request.
 
 </details>

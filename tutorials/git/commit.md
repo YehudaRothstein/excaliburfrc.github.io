@@ -34,6 +34,7 @@ git commit -m "message"
 
 Use the checkboxes on the left to select the files to add.
 Write the commit message at the bottom, and press `Commit`.
+
 ![](img/ghd-commit.png)
 
 </details>

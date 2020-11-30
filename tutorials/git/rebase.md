@@ -34,13 +34,17 @@ git rebase origin/main
 </details>
 <details id="ghd-rebase">
 
-Click on `Branch > Rebase current branch`, and select the branch to rebase onto, and click `Start rebase`.
+Click on `Branch > Rebase current branch`, select the branch to rebase onto, and click `Start rebase`.
+
+
 ![](img/ghd-rebase.png)
 
 </details>
 <details id="ij-rebase">
 
 Open the Branches panel, click on `origin/main`, and then on `Rebase Current onto Selected`.
+
+
 ![](img/ij-rebase.png)
 
 ---

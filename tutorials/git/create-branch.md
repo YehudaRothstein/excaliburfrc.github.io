@@ -104,10 +104,8 @@ Click `New Branch` and enter the name for the new branch.
 </details>
 <details id="ij-create">
 
-![](img/ij-create-branch.png)
-
-Open the Branches dialog and select `New Branch`, and enter the name for the new branch.
-Keep `Checkout Branch` selected to switch to the new branch.
+Open `Git > New Branch` from the top menu, and enter a name for the new branch. 
+Leave the `Checkout Branch` checkbox selected - otherwise you won't be switched to the new branch. 
 
 </details>
 

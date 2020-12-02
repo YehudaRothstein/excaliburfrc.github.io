@@ -7,8 +7,8 @@ A Pull Request with requested changes cannot be merged.
 
 ### Merge Methods
 There are three ways to merge Pull Request changes to the main repository/branch.
-Repository/Organization admins can disable any of these options, but at least one must be enabled.
 The three types are `merge`, `squash`, and `rebase`:
+> Repository/Organization admins can disable any of these options, but at least one must be enabled.
 
 ##### Merge
 - adds all commits on branch by a [_merge commit_](https://www.atlassian.com/git/tutorials/using-branches/git-merge)

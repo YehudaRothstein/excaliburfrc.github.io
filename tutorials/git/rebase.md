@@ -42,14 +42,7 @@ Click on `Branch > Rebase current branch`, select the branch to rebase onto, and
 </details>
 <details id="ij-rebase">
 
-Open the Branches panel, click on `origin/main`, and then on `Rebase Current onto Selected`.
-
-
-![](img/ij-rebase.png)
-
----
-
-**! Note:** do **not** select `Checkout and rebase onto current`, as it will rebase `main` on `mybranch` and not the other way around.
+Open `Git > Rebase` from the top menu, and selecting `origin/main` (the new base).
 
 </details>
 

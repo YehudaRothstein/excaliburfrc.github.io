@@ -3,4 +3,11 @@ description: Website for FRC team 6738 Excalibur
 markdown: GFM
 syntax_highlighter: rouge
 
-exclude: [ clean.sh , .vscode/ ]
+exclude: [
+    clean.sh ,
+    .vscode/ ,
+    .idea/ ,
+    Gemfile ,
+    Gemfile.lock ,
+    jekyll-run.bat
+]

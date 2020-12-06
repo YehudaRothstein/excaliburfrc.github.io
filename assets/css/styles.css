@@ -1,3 +1,18 @@
+#navContainer {
+  width: 100%;
+  top: 0;
+}
+
+@media (min-width: 991px) {
+  #content {
+    margin-top: 76px !important;
+  }
+  #navContainer {
+    position: fixed;
+    z-index: 100;
+  }
+}
+
 * {
   border-radius: 0%;
   color: #d3af37;
@@ -18,6 +33,7 @@ p {
 .navbar {
   background-color: #001e59;
 }
+
 .navbar .navbar-brand,
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus,
@@ -25,13 +41,15 @@ p {
 .navbar .navbar-text a,
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
-  color: #d3af37; 
+  color: #d3af37;
 }
+
 .navbar .navbar-nav .nav-link {
   color: #d3af37;
   border-radius: .25rem;
   margin: 0 0.25em;
 }
+
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus,
 .navbar .navbar-nav .nav-item.active .nav-link,
@@ -43,6 +61,7 @@ p {
   color: #d3af37;
   /* background-color: #00459c; */
 }
+
 /* .navbar .navbar-toggle {
   border-color: #00459c;
 }
@@ -53,10 +72,12 @@ p {
 .navbar .navbar-toggle .navbar-toggler-icon {
   color: #d3af37;
 }
+
 .navbar .navbar-collapse,
 .navbar .navbar-form {
   border-color: #d3af37;
 }
+
 .navbar .navbar-link,
 .navbar .navbar-link:hover {
   color: #d3af37;
@@ -66,10 +87,12 @@ p {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #d3af37;
   }
+
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
+
   .navbar-expand-sm .navbar-nav {
     color: #d3af37;
     /* background-color: #00459c; */
@@ -80,10 +103,12 @@ p {
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #d3af37;
   }
+
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
+
   .navbar-expand-md .navbar-nav .show {
     color: #d3af37;
     /* background-color: #00459c; */
@@ -94,10 +119,12 @@ p {
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #d3af37;
   }
+
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
+
   .navbar-expand-lg .navbar-nav {
     color: #d3af37;
     /* background-color: #00459c; */
@@ -110,10 +137,12 @@ p {
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
     color: #d3af37;
   }
+
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #d3af37;
   }
+
   .navbar-expand-xl .navbar-nav {
     color: #d3af37;
     background-color: #00459c;
@@ -125,7 +154,8 @@ p {
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
   color: #d3af37;
 }
-.navbar-expand .navbar-nav{
+
+.navbar-expand .navbar-nav {
   color: #d3af37;
   background-color: #00459c;
 }
@@ -136,37 +166,37 @@ html, body {
 }
 
 
-td i{
+td i {
   font-size: 30px !important;
 }
 
-.carousel-item img{
-  object-fit:cover !important;
+.carousel-item img {
+  object-fit: cover !important;
   width: 100% !important;
 }
 
 /* Contact */
 
-#contactinfo{
+#contactinfo {
   color: #d3af37 !important;
 }
 
 /* Seasons */
 
-h5 .btn-link{
+h5 .btn-link {
   background-color: #001e59 !important;
   color: #d3af37 !important;
 }
 
-.card-header{
+.card-header {
   background-color: #001e59 !important;
 }
 
-.card{
+.card {
   border-color: #d3af37 !important;
 }
 
-.collapse, .collapsing{
+.collapse, .collapsing {
   background-color: #001e59 !important;
   color: #d3af37 !important;
 }
@@ -175,41 +205,41 @@ a {
   color: #d3af37 !important;
 }
 
-.dayinfo{
+.dayinfo {
   font-size: 3.5vh !important;
 }
 
-.maincontact{
+.maincontact {
   margin: 1vh !important;
 }
 
-.nav-item.show{
+.nav-item.show {
   background: #001e59 !important;
 }
 
-.nav-item , .nav-link{
+.nav-item, .nav-link {
   background: #001e59 !important;
   border-radius: 2px;
   transition: ease 0.2s;
 }
 
-.nav-item:hover , .nav-link:hover{
+.nav-item:hover, .nav-link:hover {
   background: #012265 !important;
   transition: ease 0.2s;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   background: #012265;
   border-radius: 2px;
 }
 
-.dropdown-item{
+.dropdown-item {
   background: #012265;
   color: #d3af37;
   transition: ease 0.1s;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   background: #d3af37;
   color: #012265 !important;
   transition: ease 0.1s;

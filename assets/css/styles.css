@@ -31,6 +31,7 @@ p {
 }
 
 .navbar {
+  float: top;
   background-color: #001e59;
 }
 
@@ -249,16 +250,29 @@ h1, h2, h3 {
   color: #d3af37;
 }
 
-span5 {
+span {
   color: #d3af37
 }
 
 p {
   text-indent: 30px;
-  color: #d3af37
+  color: #d3af37;
 }
 
 div {
   background-color: #012265;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.jumbotron {
+  justify-content: center;
+}
+
+p a {
+  text-decoration: #d3af37 underline;
+}

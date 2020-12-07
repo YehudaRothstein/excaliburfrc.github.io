@@ -1,0 +1,44 @@
+---
+layout: load-tutorial
+permalink: /tutorials/git/load-tutorial.js
+---
+{
+  "name": "git",
+  "articles": [
+    {
+      "index": 0,
+      "file": "/tutorials/git/create-branch.html",
+      "name": "Create a Branch"
+    },
+    {
+      "index": 1,
+      "file": "/tutorials/git/commit.html",
+      "name": "Add and Commit Changes"
+    },
+    {
+      "index": 2,
+      "file": "/tutorials/git/push.html",
+      "name": "Push Commits"
+    },
+    {
+      "index": 3,
+      "file": "/tutorials/git/create-pr.html",
+      "name": "Submit a Pull Request"
+    },
+    {
+      "index": 4,
+      "file": "/tutorials/git/reviews.html",
+      "name": "Reviews"
+    },
+    {
+      "index": 5,
+      "file": "/tutorials/git/rebase.html",
+      "name": "Rebase"
+    },
+    {
+      "index": 6,
+      "file": "/tutorials/git/squash-merge.html",
+      "name": "Squash/Merge PR"
+    }
+  ]
+}

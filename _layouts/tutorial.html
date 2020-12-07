@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="/assets/css/tabs.css">
+<link rel="stylesheet" href="/assets/css/sidenav.css">
+<script src="./load-tutorial.js"></script>
+<!-- sidenav -->
+<div id="sidebar" class="sidebar">
+    <a id="tutorial-intro" class="sidebar-item active" href="./">Introduction</a>
+</div><script>loadSidebar("{{ page.permalink }}")</script>
+
+<div class="row justify-content-md-center m-0 mb-sm-0 pt-md-0">
+    <!--    <div class="row justify-content-md-center m-0 mb-sm-0 pt-md-0" style="width:100%; display: block; justify-content: center !important;">-->
+    <a id="previous" href="#"><- Previous</a>
+    <a id="tutorial-home" href="./">Tutorial Home</a>
+    <a id="next" href="#">Next -></a>
+    <script>loadProgressButtons("{{ page.permalink }}")</script>
+    <div class="jumbotron col-sm-12 col-md-10 m-0 pb-md-0" style="background-color:#012265;">
+        <h1 id="title"></h1>
+        <script>setTitle("{{ page.permalink }}")</script>
+        {{ content }}
+    </div>
+</div>
+<!-- Tab links -->
+<script src="/scripts/tabs.js"></script>

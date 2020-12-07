@@ -24,6 +24,9 @@ Some git terminology:
 [frc-docs](https://docs.wpilib.org/en/stable/docs/software/basic-programming/git-getting-started.html)
 has a good explanation of Git basics and a tutorial for creating your first repository.
 
+[k88hudson/git-flight-rules](https://github.com/k88hudson/git-flight-rules/blob/master/README.md) is
+also a good reference on how to do stuff in git.
+
 This tutorial is for creating Pull Requests based on our Git workflow.
 Our git workflow:
 

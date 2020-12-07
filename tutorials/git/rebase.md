@@ -18,7 +18,7 @@ Before rebasing, make sure that `origin/main` is up-to-date and that you are on 
 That is covered [here](./create-branch.html#pulling-codeorigincode).
 Then we will rebase `mybranch` onto `origin/main`.
 
-##### Rebase
+### Rebase
 <div class="tab">
   <button class="tablinks" onclick="switchTo(event, 'cmd-rebase')">Terminal</button>
   <button style="" class="tablinks" onclick="switchTo(event, 'ij-rebase')">IntelliJ</button>
@@ -36,13 +36,10 @@ git rebase origin/main
 
 Click on `Branch > Rebase current branch`, select the branch to rebase onto, and click `Start rebase`.
 
-
-![](img/ghd-rebase.png)
-
 </details>
 <details id="ij-rebase">
 
-Open `Git > Rebase` from the top menu, and selecting `origin/main` (the new base).
+Open `Git > Rebase` from the top menu, and select `origin/main` (the new base).
 
 </details>
 

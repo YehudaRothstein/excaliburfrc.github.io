@@ -273,16 +273,6 @@ img {
   justify-content: center;
 }
 
-blockquote {
-  border-left: 10px solid #d3af37;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-
-}
-blockquote p {
-  display: inline;
-}
-
 p a {
   text-decoration: #d3af37 underline;
 }

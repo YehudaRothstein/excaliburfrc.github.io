@@ -3,67 +3,62 @@ permalink: /sponsors/
 layout: default
 ---
 <div class="row justify-content-center m-0">
-    <div style="background-color:#012265;" class="jumbotron col-sm-12 m-0">
+    <div style="background-color:#012265;" class="jumbotron col-sm-12 m-0" id="parent">
         <h1 style="text-align: center;">Thanks to all our sponsors!</h1>
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="Apple.png" width="100%" /><br />
-                <h2 style="text-align: center;">Apple Inc.</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="3dny.png" width="100%" /><br />
-                <h2 style="text-align: center;">3DNY</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="bakara.png" width="100%" /><br />
-                <h2 style="text-align: center;">Bakara Geva</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="gotlib.png" width="100%" /><br />
-                <h2 style="text-align: center;">Gotlib and Solaris</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="glatil.png" width="100%" /><br />
-                <h2 style="text-align: center;">Glassteel</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="Conlog.png" width="100%" /><br />
-                <h2 style="text-align: center;">Conlog</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="LamedKaf.png" width="100%" /><br />
-                <h2 style="text-align: center;">Lamed Kaf</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="Modiin.png" width="100%" /><br />
-                <h2 style="text-align: center;">City of Modiin</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="Tevel.png" width="100%" /><br />
-                <h2 style="text-align: center;">Tevel</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="Sagol.png" width="100%" /><br />
-                <h2 style="text-align: center;">Sagol</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="saiktiv.png" width="100%" /><br />
-                <h2 style="text-align: center;">Saiktiv</h2>
-            </div>
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="SolidWorks.png" width="100%" /><br />
-                <h2 style="text-align: center;">Solid Works</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-6 p-4 justify-content-center">
-                <img class="img-responsive rounded" src="BneiAkiva.png" width="100%" /><br />
-                <h2 style="text-align: center;">Bnei Akiva School Network</h2>
-            </div>
-        </div>
+        <script>
+            const panelsPerRow = 4;
+            const panels = [
+                ["Apple.png", "Apple Inc."],
+                ["3dny.png", "3DNY"],
+                ["bakara.png", "Bakara Geva"],
+                ["gotlib.png", "Gotlib and Solaris"],
+                ["glatil.png", "Glassteel"],
+                ["Conlog.png", "Conlog"],
+                ["LamedKaf.png", "Lamed Kaf"],
+                ["Modiin.png", "City of Modiin"],
+                ["Tevel.png", "Tevel"],
+                ["Sagol.png", "Sagol"],
+                ["saiktiv.png", "Saiktiv"],
+                ["SolidWorks.png", "SolidWorks"],
+                ["BneiAkiva.png", "Bnei Akiva School Network"]
+            ]
+
+            function createPanel(img, name) {
+                let container = document.createElement("div")
+                container.className += " col-md-3 col-6 p-4 justify-content-center";
+
+                let image = document.createElement("img");
+                image.className += " img-responsive rounded";
+                image.src = img;
+                image.setAttribute("width", "100%");
+                container.appendChild(image);
+
+                container.appendChild(document.createElement("br"));
+
+                let title = document.createElement("h2");
+                title.style.textAlign = "center";
+                title.innerText = name;
+                container.appendChild(title);
+
+                return container;
+            }
+            function createRow() {
+                let r = document.createElement("div");
+                r.className += "row justify-content-center";
+                return r;
+            }
+
+            let parent = document.getElementById("parent");
+            let row;
+            for (let i = 0; i < panels.length; i++) {
+                // alert(panels[i][0] + " | " + panels[i][1]); // debug
+                if (i % panelsPerRow === 0) {
+                    row = createRow();
+                    parent.appendChild(row);
+                }
+                let panel = createPanel(panels[i][0], panels[i][1]);
+                row.appendChild(panel);
+            }
+        </script>
     </div>
 </div>

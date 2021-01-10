@@ -1,7 +1,7 @@
 ---
 permalink: /AboutFRC.html
 layout: text
-imgsrc: "https://drive.google.com/uc?id=13Rm_VaXAybWtcPt_nsVWp6g8XkwRdG7a"
+imgsrc: "/img/field2019-view.jpg"
 ---
 [FRC (FIRST Robotics Competition)](https://www.firstinspires.org/robotics/frc) is an international
 high-school robotics competition in which two alliances of three teams each compete to score as many points

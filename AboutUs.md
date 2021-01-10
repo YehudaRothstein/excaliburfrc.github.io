@@ -1,7 +1,7 @@
 ---
 permalink: /AboutUs.html
 layout: text
-imgsrc: "https://drive.google.com/uc?id=1lrRxtkE4-PqPhgdvieszrpZLwZx-d3kt"
+imgsrc: "/img/team2019-photo_dcmp.jpeg"
 ---
 We are FRC team #6738 Excalibur, established in 2017. We now have ~40 high school students.
 <br /><br />

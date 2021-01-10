@@ -1,7 +1,7 @@
 ---
 permalink: /outreach/
 layout: text
-imgsrc: "https://drive.google.com/uc?id=117VNIyeWKX3Kte9ftclcJy-ZemLxr1UL"
+imgsrc: "/img/fll-mentor-course.jpg"
 ---
 ### Community Outreach
 One of the most important parts of FIRST is community outreach, that is relevant all year round (not
